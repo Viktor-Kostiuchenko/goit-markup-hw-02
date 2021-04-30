@@ -14,11 +14,15 @@
   --logo-color: #000000;
 }
 
-.body {
+body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
+.list {
+  list-style: none;
+}
 
+/*! logo */
 .logo {
   color: var(--logo-color);
 }
@@ -32,7 +36,7 @@
   color: var(--accent-color);
 }
 
-/* ? Site navigation */
+/* ! Site navigation */
 .site-nav .link {
   color: var(--title-text-color);
 }
@@ -46,4 +50,68 @@
   color: var(--title-text-color);
 }
 
+.contacts .link {
+  color: var(--primary-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* ! Hero */
+/*? УКАЗАЛ БЕКГРАУНД ДЛЯ ВИДА */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+/* ! Button */
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* ! Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* ! Features */
+.feature-title {
+  color: var(--title-text-color);
+}
+
+/* ! Team */
+.team-title {
+  color: var(--title-text-color);
+}
+
+/*! Footer */
+/*? УКАЗАЛ БЕКГРАУНД ДЛЯ ВИДА */
+.footer {
+  background-color: #2f303a;
+}
+
+/*? КАК ЛУЧШЕ ПОМЕНЯТЬ ЦВЕТ ЛОГО */
+
+.footer-contacts-location {
+  color: var(--primary-white-color);
+}
+.footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*? КАК ЛУЧШЕ ЗАМЕНИТЬ ТАКОЕ ДЛИННОЕ ОБОЗНАЧЕНИЕ */
+.footer-contacts-location .link:hover,
+.footer-contacts-location .link:focus {
+  color: var(--accent-color);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
 /* ! portfolio.html */
