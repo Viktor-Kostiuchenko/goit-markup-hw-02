@@ -1,0 +1,49 @@
+/* цвет основного текста #757575 */
+/* цвет текста заголовков #212121 */
+/* белый #FFFFFF  */
+/* акцент #2196F3 */
+/* цвет фона футера #2F303A; */
+
+/* ! index.html */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --logo-color: #000000;
+}
+
+.body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--logo-color);
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+.logo-footer {
+  color: var(--primary-white-color);
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+
+/* ? Site navigation */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
+/* ! portfolio.html */
