@@ -17,7 +17,7 @@
          <a href="./index.html" lang="en" class="logo-primary"> <span class="logo-accent">Web</span>Studio</a>
          <ul class="site-nav">
             <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
             <li><a href="" class="link">Контакты</a></li>
          </ul>
       </nav>
@@ -34,65 +34,81 @@
    <!--! Основное содержимое портфолио-->
    <main>
       <section>
-         <nav>
-            <ul class="project-nav">
-               <li><a href="" class="category">Все</a></li>
-               <li><a href="" class="category">Веб-сайты</a></li>
-               <li><a href="" class="category">Приложения</a></li>
-               <li><a href="" class="category">Дизайн</a></li>
-               <li><a href="" class="category">Маркетинг</a></li>
-            </ul>
-         </nav>
-      </section>
-      <section>
-         <ul>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/technokriak.jpg"></a>
-               <a href=""><h2 class="project-title">Технокряк</h2></a>
-               <p>Веб-сайт</p>
-            </li>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/poster.jpg"></a>
-               <a href=""><h2 class="project-title">Постер New Orlean vs Golden Star</h2></a>
-               <p>Дизайн</p>
-            </li>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/restaurant.jpg"></a>
-               <a href=""><h2 class="project-title">Ресторан Seafood</h2></a>
-               <p>Приложение</p>
-            </li>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/prime.jpg"></a>
-               <a href=""><h2 class="project-title">Проект Prime</h2></a>
-               <p>Маркетинг</p>
-            </li>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/boxes.jpg"></a>
-               <a href=""><h2 class="project-title">Проект Boxes</h2></a>
-               <p>Приложение</p>
-            </li>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/inspiration.jpg"></a>
-               <a href=""><h2 class="project-title">Inspiration has no Borders</h2></a>
-               <p>Веб-сайт</p>
-            </li>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/edition.jpg"></a>
-               <a href=""><h2 class="project-title">Издание Limited Edition</h2></a>
-               <p>Дизайн</p>
-            </li>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/lab.jpg"></a>
-               <a href=""><h2 class="project-title">Проект LAB</h2></a>
-               <p>Маркетинг</p>
-            </li>
-            <li class="project">
-               <a href=""><img src="./images/portfolio/business.jpg"></a>
-               <a href=""><h2 class="project-title">Growing Business</h2></a>
-               <p>Приложение</p>
-            </li>
+         <!--? Потом заголовок уберем-->
+         <h1>Демонстрация проектов</h1>
+         <ul class="filters">
+            <li><button type="button" class="category">Все</></button></li>
+            <li><button type="button" class="category">Веб-сайты</></button></li>
+            <li><button type="button" class="category">Приложения</></button></li>
+            <li><button type="button" class="category">Дизайн</></button></li>
+            <li><button type="button" class="category">Маркетинг</></button></li>
          </ul>
 
+         <ul class="portfolio">
+            <li class="project">
+               <a href="">
+                  <img src="./images/portfolio/technokriak.jpg">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-caption">Веб-сайт</p>
+               </a>
+            </li>
+            <li class="project">
+               <a href="">
+                  <img src="./images/portfolio/poster.jpg">
+                  <h2 class="project-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                  <p class="project-caption">Дизайн</p>
+               </a>
+            </li>
+            <li class="project">
+               <a href="">
+                  <img src="./images/portfolio/restaurant.jpg">
+                  <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="project-caption">Приложение</p>
+               </a>
+            </li>
+            <li class="project">
+               <a href="">
+                  <img src="./images/portfolio/prime.jpg">
+                  <h2 class="project-title">Проект <span lang="en">Prime</span></h2>
+                  <p class="project-caption">Маркетинг</p>
+               </a>
+            </li>
+            <li class="project">
+               <a href="">
+                  <img src="./images/portfolio/boxes.jpg">
+                  <h2 class="project-title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="project-caption">Приложение</p>
+               </a>
+            </li>
+            <li class="project">
+               <a href="">
+                  <img src="./images/portfolio/inspiration.jpg">
+                  <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
+                  <p class="project-caption">Веб-сайт</p>
+               </a>
+            </li>
+            <li class="project">
+               <a href="">
+                  <img src="./images/portfolio/edition.jpg">
+                  <h2 class="project-title">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="project-caption">Дизайн</p>
+               </a>
+            </li>
+            <li class="project">
+               <a href="">
+                  </href><img src="./images/portfolio/lab.jpg">
+                  <h2 class="project-title">Проект <span lang="en">LAB</span></h2>
+                  <p class="project-caption">Маркетинг</p>
+               </a>
+            </li>
+            <li class="project">
+               <a href="">
+                  </href><img src="./images/portfolio/business.jpg">
+                  <h2 class="project-title" lang="en">Growing Business</h2>
+                  <p class="project-caption">Приложение</p>
+               </a>
+            </li>
+         </ul>
 
       </section>
 
