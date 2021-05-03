@@ -23,16 +23,19 @@ ul {
 }
 
 /** logo */
-.logo {
+.logo-primary {
   color: var(--logo-color);
 }
 .logo-accent {
   color: var(--accent-color);
 }
-.logo-footer {
+.logo-secondary {
   color: var(--primary-white-color);
 }
-.logo:hover {
+.logo-primary:hover,
+.logo-secondary:hover,
+.logo-primary:focus,
+.logo-secondary:focus {
   color: var(--accent-color);
 }
 
@@ -50,11 +53,11 @@ ul {
   color: var(--title-text-color);
 }
 
-.contacts .link {
+.contacts-nav .link {
   color: var(--primary-text-color);
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
   color: var(--accent-color);
 }
 
@@ -94,28 +97,15 @@ ul {
 .footer {
   background-color: #2f303a;
 }
-
-/*? КАК ЛУЧШЕ ПОМЕНЯТЬ ЦВЕТ ЛОГО */
-
-.footer > a {
+.footer .location {
   color: var(--primary-white-color);
 }
-
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
 }
-
-/*? КАК ЛУЧШЕ ЗАМЕНИТЬ ТАКОЕ ДЛИННОЕ ОБОЗНАЧЕНИЕ */
-.future-contacts-location {
-  color: var(--primary-white-color);
-}
-
-.future-contacts-location:hover,
-.future-contacts-location:focus {
-  color: var(--accent-color);
-}
-
+.footer .location:hover,
 .footer .link:hover,
+.footer .location:focus,
 .footer .link:focus {
   color: var(--accent-color);
 }
