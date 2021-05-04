@@ -38,12 +38,7 @@ ul {
 .logo-secondary {
   color: var(--primary-white-color);
 }
-.logo-primary:hover,
-.logo-secondary:hover,
-.logo-primary:focus,
-.logo-secondary:focus {
-  color: var(--accent-color);
-}
+
 .logo-primary,
 .logo-secondary {
   font-family: Raleway, sans-serif;
