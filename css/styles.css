@@ -4,8 +4,6 @@
 /* акцент #2196F3 */
 /* цвет фона футера #2F303A; */
 
-/* ! index.html */
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -26,17 +24,25 @@ body {
   letter-spacing: 0.03em;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* ! =====================================HEADER===================================== */
 /** logo */
 .logo-primary {
   color: var(--logo-color);
 }
+
 .logo-accent {
   color: var(--accent-color);
 }
+
 .logo-secondary {
   color: var(--primary-white-color);
 }
@@ -47,38 +53,60 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
 }
 
 /** Site navigation */
+.site-nav .link,
+.contact-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.33;
-  letter-spacing: 0.02em;
-  text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-.contacts-nav .link {
+
+.contact-nav .link {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
 }
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
+
+.site-nav .link.current,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
   color: var(--accent-color);
 }
 
+/* ! ===================================END OF HEADER=================================== */
+
+/* ! =====================================FOOTER===================================== */
+/** Footer */
+/*? УКАЗАЛ БЕКГРАУНД ДЛЯ ВИДА */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-contact .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .location {
+  color: var(--primary-white-color);
+}
+
+.footer-contact .location:hover,
+.footer-contact .link:hover,
+.footer-contact .location:focus,
+.footer-contact .link:focus {
+  color: var(--accent-color);
+}
+/* ! ===================================END OF FOOTER=================================== */
+
+/* ! ===================================INDEX.HTML=================================== */
 /** Hero */
 /*? УКАЗАЛ БЕКГРАУНД ДЛЯ ВИДА */
 .hero {
@@ -86,7 +114,6 @@ ul {
 }
 .hero-title {
   color: var(--primary-white-color);
-  font-style: 400;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -107,12 +134,12 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /** Section */
 .section-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -121,7 +148,6 @@ ul {
 /** Features */
 .feature-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -132,46 +158,28 @@ ul {
   background-color: #e5e5e5;
 }
 
-.team-name {
+.team-member {
+  background-color: #ffffff;
+}
+
+.member-name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
-.team-position {
+
+.member-position {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 
-/** Footer */
-/*? УКАЗАЛ БЕКГРАУНД ДЛЯ ВИДА */
-.footer {
-  background-color: #2f303a;
-  text-decoration: none;
-}
+/* ! ===================================THE END OF INDEX.HTML=================================== */
 
-.footer .location {
-  color: var(--primary-white-color);
-}
-.footer .link {
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer .location,
-.footer .link {
-  text-decoration: none;
-  font-style: normal;
-}
-.footer .location:hover,
-.footer .link:hover,
-.footer .location:focus,
-.footer .link:focus {
-  color: var(--accent-color);
-}
-
-/* ! portfolio.html */
-.filters .category {
+/* ! =====================================PORTFOLIO.HTML=====================================*/
+.filter-category {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   font-weight: 500;
@@ -180,25 +188,19 @@ ul {
   text-align: center;
   cursor: pointer;
 }
-.filters .category:hover,
-.filters .category:focus {
+
+.filter-category:hover,
+.filter-category:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+
 .project {
   background-color: #eeeeee;
 }
-.project > a {
-  text-decoration: none;
-}
 
-.project:hover,
-.project:focus {
-  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
 .project-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -209,3 +211,4 @@ ul {
   font-size: 16px;
   line-height: 1.87;
 }
+/* ! ================================THE END OF PORTFOLIO.HTML================================ */
