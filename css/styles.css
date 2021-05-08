@@ -13,7 +13,6 @@
   --secondary-bcg-color: #2f303a;
   --staff-section-bcg-color: #e5e5e5;
   --filter-bcg-color: #f5f4fa;
-  --project-bcg-color: #eeeeee;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --primary-font: Roboto, sans-serif;
   --logo-font: Raleway, sans-serif;
@@ -198,10 +197,6 @@ body {
 .filter-category:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
-
-.project {
-  background-color: var(--project-bcg-color);
 }
 
 .project-title {
